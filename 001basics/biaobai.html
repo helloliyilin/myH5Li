@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            background-image: url("./images/0.jpg");
+            background-size: 100% 100%;
+            height: 100%;
+        }
+        html{
+            height: 100%;
+            }
+        @keyframes myfirst1 {
+            0%{opacity: 0}
+            25%{opacity: 100}
+            50%{opacity: 0}
+            100%{opacity: 0}
+        }
+        @keyframes myfirst2 {
+            0%{opacity: 0}
+            50%{opacity: 0}
+            75%{opacity: 100}
+            100%{opacity: 0}
+        }
+        @keyframes myfirst3 {
+            from{background:red}
+            to{background:green}
+        }
+        #myid1{
+            font-size: 50px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            animation: myfirst1 10s infinite;
+        }
+        #myid2{
+            font-size: 50px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            animation: myfirst2 10s infinite;
+        }
+
+        div{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            animation:myfirst3 5s linear 1s infinite alternate;
+        }
+
+    </style>
+
+</head>
+<body>
+<audio src="mp3/bgm.mp3" controls="controls" autoplay="autoplay" loop="loop">
+</audio>
+<p id="myid1">床前明月光，</p>
+<p id="myid2">疑是地上霜。</p>
+<div id="mydiv1"></div>
+</body>
+</html>
